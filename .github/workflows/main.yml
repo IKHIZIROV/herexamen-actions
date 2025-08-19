@@ -11,10 +11,10 @@ jobs:
       uses: devellany/send-mail@v1.0.2
       with:
         host: smtp.google.com
-        account: u8783806587@gmail.com
-        password: ismailjolo
+        account: ${{secrets.ACCOUNT}}
+        password: ${{secrets.PASSWORD}}
         sender: ismail
-        from: u8783806587@gmail.com
+        from: ${{secrets.ACCOUNT}}
         to: u8783806587@gmail.com
         subject: Aantal lijnen code
         body: Check de bijlage :)
