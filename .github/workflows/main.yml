@@ -1,3 +1,5 @@
+# volgens mij werkt het niet omdat ik perongeluk toch 2FA heb gezet op mijn nieuwe account
+# en heb geen tijd om een nieuwe te maken :(
 on:
   push:
     branches:
