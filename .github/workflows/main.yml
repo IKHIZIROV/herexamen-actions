@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+    - main
+jobs:
+  sendmail:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: send email
+      uses: devellany/send-mail@v1.0.2
+      with:
+        host: smtp.google.com
+        account: ${{secrets.ACCOUNT}}
+        password: ${{secrets.PASSWORD}}
+        sender: ismail
+        from: ${{secrets.ACCOUNT}}
+        to: u8783806587@gmail.com
+        subject: Aantal lijnen code
+        body: Check de bijlage :)
+        attachments: file://linesofcode.txt
