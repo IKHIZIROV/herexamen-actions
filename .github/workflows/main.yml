@@ -18,4 +18,4 @@ jobs:
         to: u8783806587@gmail.com
         subject: Aantal lijnen code
         body: Check de bijlage :)
-        attachments: file://linesofcode.txt
+        attachments: '[{"path":"linesofcode.txt"}]'
